@@ -1,0 +1,46 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #2a2a2a;
+	font-family: Arial;
+}
+
+/* ============== Parte do Menu  ============== */
+header nav.navbar {
+    background-color: #ffeb00;
+    font-size: 13pt;
+}
+/* Cor do nome NavBar */
+header nav.navbar a#nomeNav {
+	color: #2a2a2a;
+}
+/* Cor do mouse sobre o NavBar */
+header nav.navbar a#nomeNav:hover {
+	color: #5a5a5a;
+	
+}
+/* Cor do mouse sobre os botoes */
+header nav.navbar button {
+	background-color: #2a2a2a;
+}
+header nav.navbar button span {
+	background-color: #3a3a3a;
+}
+/* Alinhando os botoes */
+header nav.navbar div#myNavbar {
+	text-align: center;
+}
+/* Estilo dos Botoes, sem linha sublinhada e cor */
+header nav.navbar div#myNavbar a.col {
+	text-decoration:none;
+	padding-bottom: 2%;
+	color: #6a6a6a;
+	border-radius: 5px;
+}
+/* Borda em volta dos botoes ao passar por cima  */
+header nav.navbar div#myNavbar a.col:hover {
+	background-color:#6a6a6a;
+	color: #ffeb00;
+	transition: 2s;
+}
