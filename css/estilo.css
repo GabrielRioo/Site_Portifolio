@@ -44,3 +44,28 @@ header nav.navbar div#myNavbar a.col:hover {
 	color: #ffeb00;
 	transition: 2s;
 }
+/* ================= Parte do Titulo ================== */
+/* Cor ao background do Titulo */
+div#titulo {
+	background-color: #ffeb00;
+	border-radius: 1px;
+}
+/* Estilo do H1 */
+div#titulo h1 {
+	color: #2a2a2a;
+	font-weight: 400;
+}
+/* ================= Parte do Sobre ===================== */
+/* Cor do fundo do sobre */
+div#section1 {
+	background-color: #2a2a2a;
+}
+/* Cor das Letras */
+div#section1 div.row h2, p, h1 {
+	color: white;
+}
+/* Cor e tamanho das estrelas - CONSERTAR!!!!!!*/
+/* div#section1 div.row i.fa {
+	font-size:15px;
+	color: #ffeb00;
+} */
