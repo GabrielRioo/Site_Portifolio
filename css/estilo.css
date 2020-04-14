@@ -201,3 +201,191 @@ div#section2 a#curriculo:hover {
 div.timeline p {
 	color: black;
 }
+
+/* ==============Parte do Portifolio=============== */
+div#section3 {
+	background-color: #2a2a2a;
+	border-radius: 1px;
+}
+
+div#section3 h1 {
+	color: #6a6a6a;
+}
+
+div#section3 div.row-sm div.nature img {
+	width:100%;
+	max-width:300px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+div#section3 div.row-sm div.nature img:hover{
+	opacity: 0.7;
+}
+
+div#section3 div.row-sm div.cars img {
+	width:100%;
+	max-width:300px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+div#section3 div.row-sm div.cars img:hover{
+	opacity: 0.7;
+}
+
+div#section3 div.row-sm div.people img {
+	width:100%;
+	max-width:300px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+div#section3 div.row-sm div.people img:hover{
+	opacity: 0.7;
+}
+
+/* Adiciona um padding entre CADA coluna */
+div#section3 div.row-sm,
+div#section3 div.row-sm > .column {
+  padding: 8px;
+}
+
+/* Crie três colunas iguais que flutuam próximas uma da outra */
+.column{
+  float: left;
+  width: 33.33%;
+  display: none; /* Esconde todos elementos como default */
+}
+
+/* Ao diminuir abaixo de 550px imagens responsivas */
+@media screen and (max-width: 550px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Limpar floats após row */ 
+.row-sm:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ffeb00;
+}
+
+/* A classe "show" é adicionada aos elementos filtrados(sem ela, nao mostra as imagens) */
+.show {
+  display: block;
+}
+
+/* Estilo dos botoes */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Ao clicar no bota, ficar selecionado */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Modal (background) - Quando clicar escurecer a tela */
+.modal {
+  display: none; /* Esconde por padrao */
+  position: fixed; /* Ficar no lugar */
+  z-index: 1; /* Se manter no top */
+  padding-top: 100px; /* Localizaçao do box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Ativar rolagem, se necessário */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* opacidade escura */
+}
+
+/* Modal Content (tamanho imagem) */
+.modal-content {
+  margin:auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption da Imagem Model (legenda abaixo) */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+/* Adiciona animação ao abrir a imagem */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* Botao "x" para fechar imagem */
+.close {
+  position: absolute;
+  margin-top: -25px;
+  float: right;
+  right: 15px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.close:hover,
+.close:focus {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% de largura da imagem em telas menores */
+@media only screen and (max-width: 400px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+  
