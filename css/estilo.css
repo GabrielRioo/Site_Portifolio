@@ -280,6 +280,7 @@ div#section3 div.row-sm > .column {
   background-color: white;
   padding: 10px;
   border: 1px solid #ffeb00;
+  
 }
 
 /* A classe "show" é adicionada aos elementos filtrados(sem ela, nao mostra as imagens) */
@@ -386,6 +387,84 @@ div#section3 div.row-sm > .column {
     width: 100%;
   }
 }
+
+/* Parte do Fale Conosco */
+div#section4 {
+	background-color: #4a4a4a;
+	border-radius: 1px;
+}
+
+div#section4 h1{
+	color: #9a9a9a;
+}
+
+div#section4 div#contact p {
+	color: #9a9a9a;
+}
+
+/* Logo das Redes Sociais */
+div#section4 div i.fab {
+	font-size:48px;
+	border-radius:20px;
+}
+div#section4 div i#logo {
+	color: #6a6a6a;
+	cursor: pointer;
+}
+div#section4 div i#logo:hover {
+	color: #393939;
+}
+
+
+/* Parte do Rodapé */
+footer.container-fluid {
+	background-color: #2a2a2a;
+}
+
+footer.container-fluid p {
+	color: #6a6a6a;
+}
+footer.container-fluid a#linkFooter {
+	text-decoration: none;
+	color: #9a9a9a;
+	transition: 0.5s;
+}
+footer.container-fluid a#linkFooter:hover {
+	color: #ffeb00;
+	
+}
+/* Consultas de mídia - Linha do tempo responsiva em telas com menos de 600 px de largura */
+@media screen and (max-width: 600px) {
+/* Posiciona a timeline na esquerda */
+.timeline::after {
+	left: 31px;
+}
+
+/* Largura total dos conteiners */
+.container {
+	width: 100%;
+	padding-left: 70px;
+	padding-right: 25px;
+}
+
+/* Verifique se todas as setas estão apontando para a esquerda */
+.container::before {
+	left: 60px;
+	border: medium solid white;
+	border-width: 10px 10px 10px 0;
+	border-color: transparent white transparent transparent;
+}
+
+/* Verifique se todos os círculos estão no mesmo local */
+.left::after, .right::after {
+	left: 15px;
+}
+
+/* Faça com que todos os contêineres certos se comportem como os da esquerda */
+.right {
+	left: 0%;
+}
+
 
 
   
