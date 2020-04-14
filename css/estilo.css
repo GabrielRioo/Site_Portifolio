@@ -69,3 +69,17 @@ div#section1 div.row h2, p, h1 {
 	font-size:15px;
 	color: #ffeb00;
 } */
+
+div#section1 div.row div.container-fluid {
+	margin: 0 15% 0 15%;
+}
+
+/* Tamanho e cor dos Icones - CONSERTAR!!!!! */
+/* div#section1 div.row i.fas {
+	font-size:48px;
+	color: #ffeb00;
+} */
+
+div#section1 div.row h4, p {
+	color: white;
+}
