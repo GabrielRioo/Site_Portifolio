@@ -5,13 +5,14 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	
-	
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	
+	<script src="javaScript/script.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>	
 	
 </head>
 <body>
@@ -126,6 +127,96 @@
 			</div>
 			<br><br><br>
 		</div>
+		<!-- =========================PARTE DO PORTIFOLIO========================== -->
+		<div class="container-fluid text-center mt-n5" id="section3">
+			<br><br>
+			<h1>PORTIFOLIO</h1>
+			<br>
+			<div id="myBtnContainer">
+				<button class="btn" onclick="filterSelection('nature')"> 1</button>
+				<button class="btn" onclick="filterSelection('cars')"> 2</button>
+				<button class="btn" onclick="filterSelection('people')"> 3</button>
+				<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			</div>
+			<br>
+		<!-- Portfolio Gallery Grid -->
+			<div class="row-sm">
+				<div class="column nature">
+					<div class="content" >
+						<img src="https://http2.mlstatic.com/ps4-playstation-4-slim-500gb-2-controles-em-campinas-sp-D_NQ_NP_768471-MLB31125145106_062019-F.jpg" alt="PS4" id="myImg">
+						<h4>PS4</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+				<div class="column nature">
+					<div class="content" >
+						<img src="https://http2.mlstatic.com/ps4-playstation-4-slim-500gb-2-controles-em-campinas-sp-D_NQ_NP_768471-MLB31125145106_062019-F.jpg" alt="PS4" id="myImg2">
+						<h4>PS4</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+				<div class="column nature">
+					<div class="content" >
+						<img src="https://http2.mlstatic.com/ps4-playstation-4-slim-500gb-2-controles-em-campinas-sp-D_NQ_NP_768471-MLB31125145106_062019-F.jpg" alt="PS4" id="myImg3">
+						<h4>PS4</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+			</div>
+			<div class="row-sm">
+				<div class="column cars">
+					<div class="content">
+						<img src="https://cdn.awsli.com.br/600x450/670/670722/produto/28781179/dae658615a.jpg" alt="XBOX ONE" id="myImg4">
+						<h4>XBOX ONE</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+				<div class="column cars">
+					<div class="content">
+						<img src="https://cdn.awsli.com.br/600x450/670/670722/produto/28781179/dae658615a.jpg" alt="XBOX ONE" id="myImg5">
+							<h4>XBOX ONE</h4>
+							<p>teste teste teste</p>
+					</div>
+				</div>
+				<div class="column cars">
+					<div class="content">
+						<img src="https://cdn.awsli.com.br/600x450/670/670722/produto/28781179/dae658615a.jpg" alt="XBOX ONE" id="myImg6">
+						<h4>XBOX ONE</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>	
+			</div>
+			<div class="row-sm">
+				<div class="column people">
+					<div class="content">
+						<img src="https://cdn02.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/CI_NSwitch_CompareBundles_PackshotMarioOdysey.jpg" alt="NINTENDO" id="myImg7">
+						<h4>NINTENDO</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+				<div class="column people">
+					<div class="content">
+						<img src="https://cdn02.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/CI_NSwitch_CompareBundles_PackshotMarioOdysey.jpg" alt="NINTENDO" id="myImg8">
+						<h4>NINTENDO</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+				<div class="column people">
+					<div class="content">
+						<img src="https://cdn02.nintendo-europe.com/media/images/08_content_images/systems_5/nintendo_switch_3/CI_NSwitch_CompareBundles_PackshotMarioOdysey.jpg" alt="NINTENDO" id="myImg9">
+						<h4>NINTENDO</h4>
+						<p>teste teste teste</p>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<img class="modal-content" id="img01">
+			<div id="caption"></div>
+		</div>
+		<br><br><br>
     </tbody>
 </body>
 </html>
