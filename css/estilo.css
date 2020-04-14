@@ -83,3 +83,27 @@ div#section1 div.row div.container-fluid {
 div#section1 div.row h4, p {
 	color: white;
 }
+
+/* ==============Parte do Curriculo================== */
+/* Cor do background */
+div#section2 {
+	background-color: #3a3a3a;
+	border-radius: 1px;
+}
+div#section2 h1{
+	color: white;
+}
+
+div#section2 a#curriculo{
+	border-radius: 10px;
+	background-color: #7a7a7a;
+	padding: 0.2% 13% 0.2% 13%;
+	color: white;
+	transition:1s;
+	text-decoration:none;
+}
+
+div#section2 a#curriculo:hover {
+	color: #ffeb00;
+	
+}
