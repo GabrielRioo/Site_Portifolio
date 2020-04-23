@@ -1,8 +1,8 @@
 # Site_Portifolio
 Website to post my works
-- [ ] Title Name
+- [x] Title Name
 - [ ] Photo
-- [ ] Timeline Informations
+- [x] Timeline Informations
 - [ ] Imagens in the 'Portifólio'
-- [ ] Social networks Links 
-- [ ] GitHub link
+- [x] Social networks Links 
+- [x] GitHub link
