@@ -95,6 +95,12 @@ div#section2 h1{
 	color: white;
 }
 
+div#section2 p {
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15pt;
+}
+
 /* Link do curriculo */
 div#section2 a#curriculo{
 	border-radius: 10px;
